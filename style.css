@@ -1,0 +1,168 @@
+/*--------------------------------------Estilos Globales-----------------------------------------------------------*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family:'roboto';
+}
+
+header{
+	height: 180px;
+	background: #1c1c1c;
+	border-bottom: 3px solid #01A9DB;
+}
+header h1{
+	text-align: center;
+	line-height: 180px;
+	font-size: 60px;
+	color: #fff;
+}
+/*------------------------------------Contenedor del formulario y el formulario------------------------------------*/
+.container-form{
+	width: 70%;
+	margin: auto;
+}
+.container-form form{
+	width: 100%;
+	padding: 30px;
+	border-radius: 8px;
+}
+.container-form form input{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;	
+	font-size: 16px;
+	outline: none;
+
+}
+.container-form form input[type='text'],
+.container-form form input[type='number']{
+	border-bottom: 2px solid #bbb;
+}
+.container-form form input[type='submit']{
+	cursor: pointer;
+}
+.container-form form input[type='submit']:hover{
+	background-color: #1c1c1c;
+	color: #fff;
+	transition: .4s;
+}
+
+.container-form form input[type='text']:focus,
+.container-form form input[type='number']:focus{
+	border-bottom: 2px solid #01A9DB;
+	transition: .5s; 
+}
+.container-form form h2{
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 3px;
+}
+/*--------------------------------------Contenedor de los datos de la compra---------------------------------------*/
+.container-datos{
+	width: 25%;
+	margin: auto;
+	letter-spacing: 1px;
+	color: #222;
+	font-size: 13px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 30px;
+}
+/*--------------------------------------Contenedor de la tabla de cuotas-------------------------------------------*/
+.container-table{
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	padding-top: 45px;
+}
+.container-table table{
+	width: 100%;
+	text-align: center;
+}
+.container-table table th,
+.container-table table td{
+	text-align: center;
+	background-color: #2e2e2e;
+	color: #fff;
+	padding: 5px;
+	width: 33.3%;
+}
+.container-table table th{
+	background-color: #01A9DB;
+}
+
+/*-------------------------------------Para el login de sesiones---------------------------------------------------*/
+.container-form-login{
+	width: 70%;
+	margin: 100px auto;
+
+}
+.container-form-login .left{
+	height: 350;
+	width: 40%;
+	background: #01A9DB;
+	color: #fff;
+	float: left;
+	text-align: center;
+}
+.container-form-login .left h2{
+	line-height: 350px;
+	font-size: 50px;
+}
+.container-form-login form{
+	padding: 55px 40px;
+	float: left;
+	height: 350px;
+	width: 60%;
+	border: 1px solid #ccc;
+	background: #fff;
+
+}
+.container-form-login form input{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 35px;
+	margin-top: 20px;
+	border: none;
+	border-bottom: 1px solid #bbb;
+	font-size: 16px;
+	outline: none;
+}
+.container-form-login form input[type='submit']{
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 35px;
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+	background: #01A9DB;
+	cursor: pointer;
+}
+
+.container-form-login form input[type='submit']:hover{
+	background: #00BFFF;
+}
+.container-form-login form input[type='text']:focus,
+.container-form-login form input[type='password']:focus{
+	border-bottom: 1px solid #01A9DB;
+	font-size: 17px;
+	transition: .4s;
+}
+.cerrar .btn-cerrar{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	padding: 30px;
+	border-radius: 50%;
+	border: none;
+	background-image: url('cerrar.png');
+	background-size: cover;
+	cursor: pointer;
+}
